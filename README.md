@@ -1,22 +1,35 @@
-# commandcopilot
+# CommandCopilot
+
 AI-powered assistant for IT support engineers that suggests commands and diagnostics.
 
-## Features
--Intergrates with Azure AI Agent Service
--Analyzes heldesk tickets
--Suggests remediation commands
--Connects with Azure Monitor, Intune, and ServiceNow
+## 🚀 How to Run
 
-##Getting Started
-1.Clone the repo
-2.Set up Azuew credentials
-3.Run the project (add actual ru n steps here)
+### 1. Install dependencies
 
-## Tech Stack
-1. Python/ JavaScript (based on your code)
-2. Azure AI Agent Service
-3. Azuew Functions
-4. ServiceNow API
+```bash
+pip install -r requirements.txt
+```
 
-   ##License
-   MIT or your preffered license.
+### 2. Start the app
+
+```bash
+uvicorn main:app --reload
+```
+
+### 3. Test it
+
+Open your browser and go to:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+Use the `/analyze` endpoint to test ticket input.
+
+---
+
+## 🔧 Coming Soon
+
+- Azure AI Agent Service integration
+- Real command suggestions based on ticket context
+- Optional integration with Azure Functions
